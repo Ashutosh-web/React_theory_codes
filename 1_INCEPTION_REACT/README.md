@@ -27,7 +27,7 @@ ReactDOM provides more of the DOM related funcationalies mainly related for web 
 Both are the ways which talk about how the script source files are loaded to client side and executed while redering of the web app.
 In Asysn while html files is being loaded, scripts are downloaded in parallel, once download is completel file it will execute the script.
 In Defer while html file is being parsed, scripts are downloaded in paralled , can be executed once the html parsing is completed.
-<b>Use Cases</b>
+<br/><b>Use Cases</b>
 Async can be used when seq. of execution does not matter . Eg : Some Analytics related libraries., or not depending on any other methods.
 Defer can be used where seq. of execution matters.
 </p>
