@@ -8,12 +8,12 @@ framework calls the code written by developers , but libraries can be used anywh
 Both are piece of code only
 </p>
 
-<h3>3. What is CDN</h3>
+<h3>3. What is CDN ?</h3>
 <p>CDNs are geographically distributed group of servers used to serve file like html,css,images and videos.
-Little different from traditional servers . Unlike traditional servers you can not do DB updates like insert,delete,updates and CDN Rest aPI calls.
+Little different from traditional servers . Unlike traditional servers you can not do DB updates like insert,delete,updates and Rest API calls.
 </p>
 
-<h3>4. CORS - Cross Origin Resource Sharing</h3>
+<h3>4. CORS - Cross Origin Resource Sharing ?</h3>
 <p>crossorigin : more to discover !!!</p>
 
 <h3>5. React Vs REactDOM ?</h3>
@@ -27,7 +27,7 @@ ReactDOM provides more of the DOM related funcationalies mainly related for web 
 Both are the ways which talk about how the script source files are loaded to client side and executed while redering of the web app.
 In Asysn while html files is being loaded, scripts are downloaded in parallel, once download is completel file it will execute the script.
 In Defer while html file is being parsed, scripts are downloaded in paralled , can be executed once the html parsing is completed.
-<br/><b>Use Cases</b>
+<br/><b>Use Cases : </b>
 Async can be used when seq. of execution does not matter . Eg : Some Analytics related libraries., or not depending on any other methods.
 Defer can be used where seq. of execution matters.
 </p>
