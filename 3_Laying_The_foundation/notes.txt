@@ -1,0 +1,35 @@
+1. Difference b/w JSX and HTML ?
+2. JSX is not HTML inside javascript : this is a wrong statement
+3. What is babel ?
+
+4. React Component
+   // everything is a component in react
+   // 4.1 : one is functional component - New Way of writing code : most of the time this will be used
+   // 4.2 : one is Class based component - Old Way of writing code
+
+5. Functional Component : is a funcationl only, that return a jsx / react element / or a component
+   const Header = (props)=>{
+   return (
+   <>
+   ...
+   </>
+   )
+   }
+
+6. React Component Vs REACT element : once a () is removed from funcational component it becomes a react element.
+7. What is sanitisation ?
+8. Component Composition ?
+
+/**\*\***\*\***\*\***\*\*\*\***\*\***\*\***\*\***/
+H.W. : Do everything in your system.
+
+1. We created script and build in package.json
+2. Remove consol.log in our code base, we used the plugin
+3. "last 2 version" : IT does not mean it will work only on chrome.
+4. .babelrc
+5. Key in React elements : React Tree Reconciliation key : Diff Algorithm
+6. JSX : At the end of day is react.createelement which conversion happens from babel
+7. Functional Component , root.render(<HeaderComponent />)
+8. {} => we can write any piece of js inside JSX code
+9. We can skip the return in Functional componnet : Kind of the shorthand
+10. Difference b/w tree shaking vs clean coding

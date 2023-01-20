@@ -1,0 +1,9 @@
+#parcel builder cache
+.parcel-cache
+
+#babel builder configuration file
+.babelrc
+
+#Node-artifact files
+node_modules/
+dist/
