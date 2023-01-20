@@ -1,0 +1,22 @@
+{
+  "name": "4_talk_is_cheap_show_me_the_code",
+  "version": "1.0.0",
+  "description": "**for making bold content** _for making itaclic content_",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashutosh-web/React_theory_codes.git"
+  },
+  "author": "Ashutosh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
