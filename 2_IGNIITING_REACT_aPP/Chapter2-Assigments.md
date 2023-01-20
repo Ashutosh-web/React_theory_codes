@@ -15,11 +15,13 @@
 10. ^ - caret and ~ tilda in package.json ?
 11. What are different script type in html tag ?
 12. After creating a start script in package.json ?
+    <br/>
     eg. : "start" : "parcel index.html"
     Now, to run this we need to run command : npm start
     w/o this we can also use : npx parcel index.html
 
 13. After creating a build script in package.json ?
+    <br/>
     eg. : "build" : "parcel build index.html"
     Now, to run this we need to run command : npm run build
     w/o this we can also use : npx parcel build index.html
