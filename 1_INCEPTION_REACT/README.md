@@ -26,7 +26,7 @@ Overall, CDNs are an important tool for improving the performance, scalability, 
 </p>
 
 <h3>4. CORS - Cross Origin Resource Sharing ?</h3>
-<p>crossorigin : more to discover !!!</p>
+<p>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request. The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers. It has three parts of this mechanism, a. preflight call , then confirmaation of that call i.e Access - control Allow origin is a way and third is main http request ( post , get , etc. ) </p>
 
 <h3>5. React Vs REactDOM ?</h3>
 <p>
