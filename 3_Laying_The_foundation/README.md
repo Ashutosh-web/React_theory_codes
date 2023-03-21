@@ -5,7 +5,7 @@
     <li>Benefits of JSX</li>
     <li>Behind the scenes of JSX</li>
     <li>Babel & parcel role in JSX</li>
-    <li>Components : Funcation Components</li>
+    <li>Components : Functional Components</li>
 </ul>
 
 

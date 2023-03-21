@@ -22,9 +22,10 @@ const Heading2 = () => {
   return <h1>Namaste World!!</h1>;
 };
 
-//Funcational Components : just a noraml function which returns some JSX code
+//Funcational Components : just a noraml function which returns some JSX code / expression
+// name of functional components should start with Capital letter, it is a convention
 // below is an example of component composition
-// We can use funcational components like <HeaderComponenet /> or {HeaderComponent()}
+// We can use functional components like <HeaderComponenet /> or {HeaderComponent()}
 const HeaderComponent = () => {
   return (
     <div>
