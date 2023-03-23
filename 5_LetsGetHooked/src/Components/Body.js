@@ -1,41 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-/*
-    Header
-        - Logo 
-        - Nav Items  : Home About Us Contact Cart 
-    Body
-        - Food Items
-        - Restaurant Lists
-        - Search Bar 
-    Footer
-        - Social Media Links
-        - Copy Rights
-*/
-
-// functional component returning some JSX expression
-const Title = () =>{
-    return (
-        <a href="/">
-                <img src = "https://assets.materialup.com/uploads/61d86780-be13-47fa-81a6-226aac22db27/preview.jpg"></img>
-        </a>
-    )
-};
-
-const Header = () =>{
-    return (
-        <div className="header">
-            <Title/>
-            <ul className="nav-items">
-                <li>Home</li>
-                <li>Contact Us</li>
-                <li>About Us</li>
-                <li>Cart</li>
-            </ul>
-        </div>
-    )
-};
 
 // my restraunt data in the format of array of objects
 const restaurantList = [
@@ -1863,52 +1825,37 @@ const restaurantList = [
     cuisines,
     avgRating
 }
+*/
 
-  */
-const Restaurants = (props) =>{
+
+const Restaurants = ({
+  cloudinaryImageId,
+  name,
+  cuisines,
+  avgRating
+}) =>{
     return (
         <div className="restaurant-card">
             <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" 
-            + props.restaurantdata.cloudinaryImageId}></img>
-            <h2>{props.restaurantdata.name}</h2>
-            <h4>{props.restaurantdata.cuisines.join(', ')}</h4>
-            <p>{props.restaurantdata.avgRating}⭐</p>
+            + cloudinaryImageId}></img>
+            <h2>{name}</h2>
+            <h4>{cuisines.join(', ')}</h4>
+            <p>{avgRating}⭐</p>
         </div>
     )
 };
 
+// here I am using spread operator
 const Body = () =>{
     return (
         <div className="restaurant-list">
             {
                 restaurantList.map((restaurant) =>{
-                    return <Restaurants key = {restaurant.data.id} restaurantdata = {restaurant.data}/>
+                    return <Restaurants key = {restaurant.data.id}  {...restaurant.data}/>
                 })
             }
         </div>
     )
 };
 
-const Footer = () =>{
-    return (
-        <div>
-            Footer
-        </div>
-    )
-}
-
-const AppLayout = () =>{
-    return (
-        <>
-        <Header/>
-        <Body/>
-        <Footer />
-        </>
-    )
-};
-
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />);
+export default Body;
