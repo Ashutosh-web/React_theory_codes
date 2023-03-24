@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import {Header} from "./Header";
 import Body from "./Body";
-import Header from "./Header";
+import Footer from "./Footer";
 
 // 1. This is called named import : import { Title,Header } from "./Header";
 // 2. This is called default import : import Header from "./Header";
@@ -12,14 +13,11 @@ const AppLayout = () =>{
     return (
         <>
         <Header/>
-        <Body/>
-        <Footer />
+        {Body()}
+        {Footer()}
         </>
     )
 };
 
-
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 root.render(<AppLayout />);
