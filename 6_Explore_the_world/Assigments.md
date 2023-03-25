@@ -23,7 +23,7 @@ With dep. array      : it will be called after rendering the initial UI componen
 
 ### 5. What is optional Chaining ?
 <p> The optional chaining (?.) operator is a way of accessing the objects properties i.e. functions and its data properties.
-    It returns undefined or null , when the path mentioned or the function is not existent. This way is useful in error scenarios. Otherwise js code may give error like given variable name is undefined. Check MDN web docs for more information. 
+    It returns undefined or null , when the path mentioned or the function is not existent. This way is useful in error scenarios. Otherwise js code may give error like given variable name is undefined if variable name is not proper . Check MDN web docs for more information. 
 </p>
 
 ### 6. What is Shimmer UI ?
