@@ -22,10 +22,21 @@
     </p>
 
 ### 5. What is optional Chaining ?
+    <p> The optional chaining (?.) operator is a way of accessing the objects properties i.e. functions and its data properties.
+        It returns undefined or null , when the path mentioned or the function is not existent. This way is useful in error scenarios. Otherwise js code may give error like given variable name is undefined. Check MDN web docs for more information. 
+    </p>
+
 ### 6. What is Shimmer UI ?
+    <p> A shimmer UI resembles the page's actual UI, so users will understand how quickly the web or mobile app will load even before the content has shown up. It gives people an idea of what's about to come and what's happening (it's currently loading) when a page full of content/data takes more than 3 - 5 seconds to load.
+    </p>
+
 ### 7. What is the difference b/w JS expressions and JS statement ?
 ### 8. What is conditional rendering, explain with code example ?
 ### 9. What is CORS ?
+    <p> CORS i.e. Cross Origin Resource sharing is the protocol for resource sharing b/w two system. It has three three steps 
+    pre-flight call check , then conf. and finally actual request is made from source system to destination system.
+    </p>
+
 ### 10. What is async and await ?
 ### 11. What is the use of 'const json = await data.json();' ?
  
