@@ -40,3 +40,4 @@ With dep. array      : it will be called after rendering the initial UI componen
 ### 10. What is async and await ?
 ### 11. What is the use of 'const json = await data.json();' ?
  
+### 12. Coding Assignment 
