@@ -1,4 +1,4 @@
-import { IMT_CDN_URL } from "./constant";
+import { IMT_CDN_URL } from '../Components/Constants/Constant';
 
 /* I can use destructuring as well
 {
