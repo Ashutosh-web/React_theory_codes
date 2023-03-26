@@ -13,7 +13,7 @@ const Body = () => {
   const [restaurants, setRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState(restaurantList);
 
-  // useEffect is a hook , which renders after rendering of the component
+  // useEffect is a hook , which gets called after rendering of the component initially
   // It has two arguments , callback function and dependency array
   // callback will be called after rendering of the component initially ,
   // and if dependency array provided , then after every state change
