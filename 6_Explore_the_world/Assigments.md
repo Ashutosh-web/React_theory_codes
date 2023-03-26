@@ -41,3 +41,5 @@ With dep. array      : it will be called after rendering the initial UI componen
 ### 11. What is the use of 'const json = await data.json();' ?
  
 ### 12. Coding Assignment 
+![image](https://user-images.githubusercontent.com/43653875/227725310-c87f5275-b926-4ed6-bcd9-d3012d10a9de.png)
+
