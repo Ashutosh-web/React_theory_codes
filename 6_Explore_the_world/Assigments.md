@@ -19,6 +19,7 @@
 useEffect( callback func. , dependency array )
 For empty dep. array : it will be called once after rendering the initial UI component
 With dep. array      : it will be called after rendering the initial UI component and after everytime the state changes.
+If only call back function is there : Then it will be called after each render.
 </p>
 
 ### 5. What is optional Chaining ?
@@ -32,13 +33,19 @@ With dep. array      : it will be called after rendering the initial UI componen
 
 ### 7. What is the difference b/w JS expressions and JS statement ?
 ### 8. What is conditional rendering, explain with code example ?
+<p> Rendering  funcctional components based on some condtion. Condition can be created using if - else expression , ternary operator and switch case. Let's say we want to render some shimmer UI till my api calls gets completed and return my json data.
+</p>
+
 ### 9. What is CORS ?
 <p> CORS i.e. Cross Origin Resource sharing is the protocol for resource sharing b/w two system. It has three three steps 
     pre-flight call check , then conf. and finally actual request is made from source system to destination system.
 </p>
 
 ### 10. What is async and await ?
+
 ### 11. What is the use of 'const json = await data.json();' ?
+<p> json() method returns the javascript object. Although, the name is json() , but it takes a json object and it parses it into a javascript object.
+</p>
  
 ### 12. Coding Assignment 
 ![image](https://user-images.githubusercontent.com/43653875/227725310-c87f5275-b926-4ed6-bcd9-d3012d10a9de.png)
