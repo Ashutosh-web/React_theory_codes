@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import Restaurants from "./RestaurantCard";
+import { Link } from "react-router-dom";
 import { restaurantList } from "../Components/Constants/Constant";
+import Restaurants from "./RestaurantCard";
 
 const filterData = (searchText, restaurants) => {
   return restaurants.filter((restaurant) =>
-    restaurant.data.name.includes(searchText)
+    restaurant.data.name.toLowerCase().includes(searchText)
   );
 };
 
@@ -13,11 +14,7 @@ const Body = () => {
   const [restaurants, setRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState(restaurantList);
 
-  // useEffect is a hook , which gets called after rendering of the component initially
-  // It has two arguments , callback function and dependency array
-  // a. callback will be called after rendering of the component initially ,
-  // b. and if dependency array provided , then after every state change
-  // c. if second argument is not provided, then useEffect will be called after every time our functional component gets rendered.
+
   useEffect(() => {
     getRestaurants();
   }, []);
@@ -55,7 +52,7 @@ const Body = () => {
       </div>
       <div className="restaurant-list">
         {filteredRestaurants.map((restaurant) => {
-          return <Restaurants key={restaurant.data.id} {...restaurant.data} />;
+          return <Link to={"/Restaurantmenu/"+restaurant.data.id} key={restaurant.data.id} ><Restaurants  {...restaurant.data} /></Link>;
         })}
       </div>
     </>

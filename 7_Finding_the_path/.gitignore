@@ -1,0 +1,8 @@
+#parcel builder cache
+.parcel-cache
+
+# parce related
+dist/
+
+#Node-artifact files
+node_modules/
