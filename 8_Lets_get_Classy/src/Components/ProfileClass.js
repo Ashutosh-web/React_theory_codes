@@ -5,18 +5,34 @@ import React from 'react';
 class ProfileClass extends React.Component {
 
     constructor(props){
+        console.log("constructor is called");
         super(props);
         this.state = {
             location:"",
             name : "",
+            avatar_url : "",
         }
     }
 
-    componentDidMount(){
+    async componentDidMount(){
+        
+        console.log("componentDidMount called");
+
+        const data = await fetch("https://api.github.com/users/anoyash");
+        const objData = await data.json();
+
+        // this.setState({
+        //     location: this.props.location,
+        //     name: this.props.name
+        // });
+        console.log(objData);
+
         this.setState({
-            location: this.props.location,
-            name: this.props.name
+            location : objData.location,
+            name: objData.name,
+            avatar_url : objData.avatar_url
         });
+
     }
 
     componentWillmount(){
@@ -24,11 +40,13 @@ class ProfileClass extends React.Component {
     }
 
     render() {
+        console.log("Inside rendering");
         return (
             <div className='profile-card'>
                 <ul>
-                    <li>Profile Name</li>
-                    <li>Profile Location</li>
+                    <img src={this.state.avatar_url} height="100px" width="100px"></img>
+                    <li>{this.state.name}</li>
+                    <li>{this.state.location}</li>
                 </ul>
             </div>
         )
