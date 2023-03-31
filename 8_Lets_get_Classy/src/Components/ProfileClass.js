@@ -18,20 +18,20 @@ class ProfileClass extends React.Component {
         
         console.log("componentDidMount called");
 
-        const data = await fetch("https://api.github.com/users/anoyash");
-        const objData = await data.json();
-
-        // this.setState({
-        //     location: this.props.location,
-        //     name: this.props.name
-        // });
-        console.log(objData);
+        // const data = await fetch("https://api.github.com/users/anoyash");
+        // const objData = await data.json();
 
         this.setState({
-            location : objData.location,
-            name: objData.name,
-            avatar_url : objData.avatar_url
+            location: this.props.location,
+            name: this.props.name
         });
+        //console.log(objData);
+
+        // this.setState({
+        //     location : objData.location,
+        //     name: objData.name,
+        //     avatar_url : objData.avatar_url
+        // });
 
     }
 
@@ -40,17 +40,39 @@ class ProfileClass extends React.Component {
     }
 
     render() {
+        // this.setState({
+        //     location: this.props.location,
+        //     name: this.props.name
+        // });
+        /* never call this.setstate here : 
+        What exactly happens is that each time you update state react calls render function, 
+        so if you will update state inside render function then it will stuck inside 
+        infinite loop.
+        */
         console.log("Inside rendering");
         return (
             <div className='profile-card'>
                 <ul>
-                    <img src={this.state.avatar_url} height="100px" width="100px"></img>
-                    <li>{this.state.name}</li>
-                    <li>{this.state.location}</li>
+                    <img src={this.props.avatar_url} height="100px" width="100px"></img>
+                    <li>{this.props.name}</li>
+                    <li>{this.props.location}</li>
                 </ul>
             </div>
         )
     }
+
+    // render() {
+    //     console.log("Inside rendering");
+    //     return (
+    //         <div className='profile-card'>
+    //             <ul>
+    //                 <img src={this.state.avatar_url} height="100px" width="100px"></img>
+    //                 <li>{this.state.name}</li>
+    //                 <li>{this.state.location}</li>
+    //             </ul>
+    //         </div>
+    //     )
+    // }
 
 }
 
