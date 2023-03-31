@@ -7,16 +7,20 @@ class ProfileClass extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-
+            location:"",
+            name : "",
         }
     }
 
     componentDidMount(){
-
+        this.setState({
+            location: this.props.location,
+            name: this.props.name
+        });
     }
 
     componentWillmount(){
-
+        console.log("this will be called after my first render");
     }
 
     render() {
@@ -42,6 +46,6 @@ export default ProfileClass;
  only then it will go for commit phase.
 4. DOM manipulation happens in commit phase.
 5. For accessing props we use : this.props.name / this.props.location
-6.
+6. constructor() => render() => componentDidMount() => compoenetwillMount
 
 */
