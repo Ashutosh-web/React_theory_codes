@@ -16,7 +16,7 @@
 ## 4. What is the difference b/w Client side routing and server side routing ?
 
 ## 5. What is the use of "react-router-dom" ?
-<p> This library is not provided by official react team.
+<p> This library is not provided by official react team. It is provided by REmix
 </p>
 
 ## 6. Formik Library ?
