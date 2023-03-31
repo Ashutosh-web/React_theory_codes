@@ -12,6 +12,10 @@ const AboutUs = () => {
     const data = await fetch("https://api.github.com/users/anoyash");
     const objData = await data.json();
     setUserData(objData);
+
+    return () =>{
+      console.log("unmounting AboutUs...");
+    }
   }
 
   return (

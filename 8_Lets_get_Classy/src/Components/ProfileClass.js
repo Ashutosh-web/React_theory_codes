@@ -1,6 +1,11 @@
 import React from 'react';
 // or I can use import {React.Component} from 'react'; // name import
-
+/**
+ * In JavaScript, super refers to the parent class constructor. 
+ * (In our example, it points to the React.Component implementation.)
+ * Importantly, you can’t use this in a constructor until after you’ve
+ * called the parent constructor. 
+ */
 
 class ProfileClass extends React.Component {
 
