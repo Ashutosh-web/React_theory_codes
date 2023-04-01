@@ -1,32 +1,19 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import useRestaurantMenu from "../Utils/useRestaurantMenu";
 
-const RestaurantMenu = () =>{
+const RestaurantMenu = () => {
+  const { resid } = useParams();
 
-    const {resid} = useParams();
-    console.log(resid);
-
-    const [restaurantmenu , setRestaurantMenu] = useState();
-
-    useEffect(()=>{
-        getRestaurantMenu();
-    },[]);
-
-    getRestaurantMenu = async ()=>{
-        const data =  await fetch();
-        const menulist = data.json();
-        setRestaurantMenu(menulist);
-    }
-
-    console.log(restaurantmenu);
-
-    return (
-        <div className="restaurant-menu">
-            { menulist.map( (menuItem)=>{
+  const restaurantmenu = useRestaurantMenu(resid);
+  
+  return (
+    <div className="restaurant-menu">
+      { restaurantmenu.map( (menuItem)=>{
                 return <div className="restaurant-menu-card" ></div>
             } )}
-        </div>
-    )
+      menu
+    </div>
+  );
 };
 
 export default RestaurantMenu;

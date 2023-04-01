@@ -1,4 +1,4 @@
-import { IMT_CDN_URL } from '../Constants/Constant';
+import { IMG_CDN_URL } from '../Constants/Constant';
 
 const Restaurants = ({
     cloudinaryImageId,
@@ -8,7 +8,7 @@ const Restaurants = ({
   }) =>{
       return (
           <div className="restaurant-card">
-              <img src={IMT_CDN_URL + cloudinaryImageId}></img>
+              <img src={IMG_CDN_URL + cloudinaryImageId}></img>
               <h2>{name}</h2>
               <h4>{cuisines.join(', ')}</h4>
               <p>{avgRating}⭐</p>
