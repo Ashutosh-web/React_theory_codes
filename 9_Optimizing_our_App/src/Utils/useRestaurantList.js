@@ -16,7 +16,6 @@ const useRestaurantList = ()=>{
         setRestaurants(restaurants?.data?.cards[0]?.data?.data?.cards);
         setFilteredRestaurants(restaurants?.data?.cards[0]?.data?.data?.cards);
       }
-
       return [restaurants,filteredRestaurants];
 }
 
