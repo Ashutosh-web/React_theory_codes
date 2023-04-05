@@ -25,6 +25,9 @@ export const Header = () => {
         <li>
           <Link to="/">Cart</Link>
         </li>
+        <li>
+          <Link to="/Instamart">Instamart</Link>
+        </li>
       </ul>
     </div>
   );
