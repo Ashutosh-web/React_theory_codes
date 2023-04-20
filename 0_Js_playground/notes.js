@@ -34,4 +34,5 @@ let a = 100;   // this is not correct , not allowed
 
 12. SetTimeout : stores the callback function in a separate place and attaches a timer to the callback function when the timeer gets completed , again the callback function
 rejoins the call stack and gets executed. setTimeout does not blocks the program flow there.
+12.1 : With each function call of closure function, it will link with new memory space.
 */
