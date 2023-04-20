@@ -30,5 +30,8 @@ var a = 100;
 let a = 1;
 let a = 100;   // this is not correct , not allowed
 
+11. Closure : Closure is function bundled together with its lexical environment.
 
+12. SetTimeout : stores the callback function in a separate place and attaches a timer to the callback function when the timeer gets completed , again the callback function
+rejoins the call stack and gets executed. setTimeout does not blocks the program flow there.
 */
