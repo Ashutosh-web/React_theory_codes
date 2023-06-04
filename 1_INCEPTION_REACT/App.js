@@ -7,7 +7,7 @@
 
 /* now using modern way of creating a DOM objects and rendering */
 
-//React.createElement has three parameters i.e type, props and children. Pros can be Null or {} also works
+//React.createElement has three parameters i.e type, props and children/content of the element. Pros can be Null or {} also works
 const heading = React.createElement(
   "h1",
   {

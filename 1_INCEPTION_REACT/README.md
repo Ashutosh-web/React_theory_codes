@@ -26,18 +26,18 @@ Overall, CDNs are an important tool for improving the performance, scalability, 
 </p>
 
 <h3>4. CORS - Cross Origin Resource Sharing ?</h3>
-<p>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request. The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers. It has three parts of this mechanism, a. preflight call , then confirmaation of that call i.e Access - control Allow origin is a way and third is main http request ( post , get , etc. ) </p>
+<p>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request. The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers. It has three parts of this mechanism, a. preflight call , then confirmation of that call i.e Access - control Allow origin is a way and third is main http request ( post , get , etc. ) </p>
 
 <h3>5. React Vs REactDOM ?</h3>
 <p>
-React CDN gives the core funcationalities of react like creation of components. [ this will help so that core funcationalities can be shared acroos various platforms]
+React CDN gives the core functionalities of react like creation of components. [ this will help so that core funcationalities can be shared acroos various platforms]
 ReactDOM provides more of the DOM related funcationalies mainly related for web applications. 
 </p>
 
 <h3>6. Difference b/w Async and Defer ?</h3>
 <p>
 Both are the ways which talk about how the script source files are loaded to client side and executed while redering of the web app.
-In Asysn while html files is being loaded, scripts are downloaded in parallel, once download is completel file it will execute the script.
+In Async while html files is being loaded, scripts are downloaded in parallel, once download is completed for script file, it will execute the script.
 In Defer while html file is being parsed, scripts are downloaded in paralled , can be executed once the html parsing is completed.
 <br/><b>Use Cases : </b>
 Async can be used when seq. of execution does not matter . Eg : Some Analytics related libraries., or not depending on any other methods.
