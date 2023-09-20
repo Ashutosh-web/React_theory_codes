@@ -26,12 +26,13 @@ const heading1 = React.createElement(
 
 const container = React.createElement("div", null, [heading, heading1]);
 
-//heading is a react element which is basically a object and React.createElement is method that creates a DOM object
+//heading is a react element which is basically a javascript object and React.createElement is method that creates a DOM object
 console.log(heading);
 
 //ReactDOM.createRoot is creating a root element
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//parsing a react element inside a root element
+//Parsing a react element inside a root element
 //root.render(heading);
-root.render(container);
+// render method will convert the object and putting the react element into the DOM
+root.render(container);  
