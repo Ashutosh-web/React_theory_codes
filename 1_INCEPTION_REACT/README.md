@@ -48,3 +48,11 @@ Defer can be used where seq. of execution matters.
 <p>
 React is a JavaScript library for building user interfaces that was developed by Facebook. It is known as React because it was designed to be a reactive system, meaning that it is designed to respond to changes in data by re-rendering the appropriate components in the user interface. The name "React" is short for "responsive," which reflects this core design principle.
 </p>
+
+<h3> 8. what is the difference b/w CDN link of production and development <h3>
+<p>
+</p>
+
+<h3> 9. What is arrow functions in JS ? </h3>
+<p>
+</p>

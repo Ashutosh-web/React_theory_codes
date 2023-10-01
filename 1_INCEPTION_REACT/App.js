@@ -35,4 +35,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //Parsing a react element inside a root element
 //root.render(heading);
 // render method will convert the object and putting the react element into the DOM
+// it also replaces whatever present inside the root element with this container
 root.render(container);  
