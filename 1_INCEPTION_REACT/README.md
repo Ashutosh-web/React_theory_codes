@@ -51,8 +51,10 @@ React is a JavaScript library for building user interfaces that was developed by
 
 <h3> 8. what is the difference b/w CDN link of production and development <h3>
 <p>
+    Production CDN links are minified and optimized version of React, which helps in efficient rendering of the react component
 </p>
 
 <h3> 9. What is arrow functions in JS ? </h3>
 <p>
+ const sum = (a,b) => return a + b   OR  const sum = (a,b) => a + b  OR const sum = async (a,b) => a + b; 
 </p>

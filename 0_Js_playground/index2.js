@@ -63,3 +63,4 @@ function counter3(){
 
 counter3();
 
+const sum = async (a,b) => a + b;
