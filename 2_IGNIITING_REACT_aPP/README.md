@@ -1,5 +1,8 @@
 # Igniitng React App
 
+After writing code in Local, But is it production ready? That's why we need bundlers
+So we will ignite our Application for Production
+
 In this lecture topics covered are :
 
 1. Bundler : Especially parcel
