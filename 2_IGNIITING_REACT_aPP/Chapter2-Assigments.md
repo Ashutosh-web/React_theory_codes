@@ -15,9 +15,10 @@ It helps to bundle/compressed/minified/optimize our code before sending it to pr
 
 
 4. What is '.parcel-cache' and 'dist' folder? <br/>
+
 5. What is differenece b/w dependencis and Dev-dependecies? <br/>
 npm install -D parcel  : Installing as a Dev dependency requred for development and testing purposes
-npm install react      : Installing as dependeny which will be required for production also.
+npm install react      : Installing as dependeny which will be required for production also and for working of our application.
 
 
 6. What are the superpowers of parcel ? <br/>
@@ -45,3 +46,12 @@ All the non-essentials things which can be regenerated again. Even password and 
     w/o this we can also use : npx parcel build index.html
 
 15. What is npx ?
+IT is used for executing the package
+npm + package name
+eg : npx parcel index.html , npx parcel build index.html
+
+16. npm install and npm i both are same
+
+17.Browser List 
+Basically used for making our app compatible with different browsers versions, even we can use it to restrict for certain countries as well
+

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 /*
- * HMR : Hot module replacementT
+ * HMR : Hot module replacement
  * File watcher algorithm : c++
  * Super fast build production
  * Caching while development
