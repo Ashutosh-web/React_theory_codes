@@ -10,8 +10,12 @@ import ReactDOM from "react-dom/client";
 //   "Namste World!"
 // );
 
-//JSX codes : gets converted to react.createElement by babel
-// this is a react element
+// JSX codes : gets converted to react.createElement by babel
+// JSX is not react , JSX makes our life easier. It is a HTML like syntax, it is not HTML
+// This is a react element, at end of the day it is a javascript object
+// JSX ( transpiled before it reaches the JS , converts in ECMA ) version, It is done by babel which is installed while installing the parcel, converting it into browser
+// compatible code
+// JSX ==> React.CreateELement => ReactElement - This is a JS object ==> Finally this is rendered as a HTML element
 const heading1 = (
   <h1 id="title1" key="h2">
     Namaste React!
@@ -22,14 +26,17 @@ const Heading2 = () => {
   return <h1>Namaste World!!</h1>;
 };
 
-//Funcational Components : just a noraml function which returns some JSX code / expression
+const Heading3 = <h3>Heading 3</h3>;
+
+
+// Funcational Components : just a noraml function which returns some JSX code / expression
 // name of functional components should start with Capital letter, it is a convention
 // below is an example of component composition
 // We can use functional components like <HeaderComponenet /> or {HeaderComponent()}
 const HeaderComponent = () => {
   return (
     <div>
-      {heading1}
+      {heading1} 
       {Heading2()}
       <Heading2 />
       <h1>Line 1</h1>

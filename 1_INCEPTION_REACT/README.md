@@ -58,3 +58,6 @@ React is a JavaScript library for building user interfaces that was developed by
 <p>
  const sum = (a,b) => return a + b   OR  const sum = (a,b) => a + b  OR const sum = async (a,b) => a + b; 
 </p>
+
+<h3> 10. Root.render(heading)   </h3>
+<p>IT basically replace whatever present in the root DOM , it does not append , it replaces</p>

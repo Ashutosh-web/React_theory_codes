@@ -35,15 +35,20 @@ All the non-essentials things which can be regenerated again. Even password and 
 
 
 12. What are different script type in html tag ? <br/>
+ -- normal browser script
+ -- type ='module'
+ 
 13. After creating a start script in package.json ? <br/>
     eg. : "start" : "parcel index.html"
-    Now, to run this we need to run command : npm start
+    Now, to run this we need to run command : npm run start or npm start
     w/o this we can also use : npx parcel index.html
+    Here we are creating development build
 
 14. After creating a build script in package.json ? <br/>
     eg. : "build" : "parcel build index.html"
     Now, to run this we need to run command : npm run build
     w/o this we can also use : npx parcel build index.html
+    Here we are creating a build for production
 
 15. What is npx ?
 IT is used for executing the package
