@@ -1,7 +1,7 @@
 ***Topics for this lecture***
 
 <ul>
-    <li>JSX</li>
+    <li>JSX Vs React.createElement</li>
     <li>Benefits of JSX</li>
     <li>Behind the scenes of JSX</li>
     <li>Babel & parcel role in JSX</li>

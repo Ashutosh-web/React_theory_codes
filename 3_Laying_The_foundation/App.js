@@ -13,9 +13,11 @@ import ReactDOM from "react-dom/client";
 // JSX codes : gets converted to react.createElement by babel
 // JSX is not react , JSX makes our life easier. It is a HTML like syntax, it is not HTML
 // This is a react element, at end of the day it is a javascript object
-// JSX ( transpiled before it reaches the JS , converts in ECMA ) version, It is done by babel which is installed while installing the parcel, converting it into browser
+// JSX ( transpiled before it reaches the JS , converts in ECMA ) version, It is done by babel which gets installed while installing the parcel, converting it into browser
 // compatible code
 // JSX ==> React.CreateELement => ReactElement - This is a JS object ==> Finally this is rendered as a HTML element
+
+// we need to wrap it in () , if writing the JSX code in multiple lines
 const heading1 = (
   <h1 id="title1" key="h2">
     Namaste React!
@@ -64,3 +66,45 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // for rendering a react functional component
 root.render(<HeaderComponent1 />);
+
+// came casing is used in React Element which is different from what we write in HTML 
+
+
+
+/*
+
+const heading = <h1 id="heading1">Hello</h1>;
+const heading1 = (
+  <div className = 'div-container'>
+    <h1 className = 'h1-container'>Hello 1</h1>
+    <h2 className = 'h2-container'>Hello 2</h2>
+  </div>
+)
+
+-- properties to be written in Camel casing
+-- Funcaitional component : it is just a js function m, which return some JSX expression or react element or group of react elements. 
+-- Identifier should in Captial letter only
+-- Component composition
+
+const heading2 = () =>{
+  return (
+    <h2>heading 2</h2>
+  )
+}
+
+const HeaderComponent = () => {
+  retunr (
+    <div>
+      <h1></h1>
+      {heading}
+      {Heaing2}
+      <Heading2/>
+      {Heading2()}
+    </div>
+  )
+}
+
+
+
+
+*/

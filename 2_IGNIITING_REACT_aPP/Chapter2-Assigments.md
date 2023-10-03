@@ -37,6 +37,7 @@ All the non-essentials things which can be regenerated again. Even password and 
 12. What are different script type in html tag ? <br/>
  -- normal browser script
  -- type ='module'
+ -- type = 'importmap' 
  
 13. After creating a start script in package.json ? <br/>
     eg. : "start" : "parcel index.html"
