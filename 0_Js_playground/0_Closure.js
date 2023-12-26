@@ -18,3 +18,4 @@ console.log(add3);
 console.log(add2(10));
 console.log(add3(10));
 
+// Example 2nd : Set Time Out (Asynchronous Function ) + Closure
