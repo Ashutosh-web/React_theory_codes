@@ -10,7 +10,7 @@
     * This makes the code wait at that point unitil the promise is settled , it does not stops the js engine execution , for that particular period it will go out of the 
     * call and once the promise is resolved , the promise handler again comes to the call stack.
 3. How async await works behind the scenes ? :
-    * Need to understand what happens behind the scenes when we use async keyword before the functio 
+    * Need to understand what happens behind the scenes when we use async keyword before the function 
 
 4. Example of async await :
     * See below code sample
