@@ -46,7 +46,7 @@ async function promiseHandler () {
     
     //const val = p1.then( (result) => console.log(result));
     console.log("Hello World");
-    const val = await p1; 
+    const val = await p1;               // promiseHandler execution is suspended here until the promise is resolved, note : It will not block the call statck.
     console.log("I am here promise 1");
     console.log(val);
  
