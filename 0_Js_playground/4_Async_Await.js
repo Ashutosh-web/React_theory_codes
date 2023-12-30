@@ -5,9 +5,9 @@
     * If we are simply returning a value it will wrap it inside a promise
 
 2. What is await ? : 
-    * await Can be used inside a async function
+    * await Can only be used inside a async function
     * It can also be used before a call to a function that returns a promise
-    * This makes the code wait at that point unitil the promise is settled , it does not stops the js engine execution , for that particular period it will go out of the 
+    * This makes the code wait at that point until the promise is settled , it does not stops the js engine execution , for that particular period it will go out of the 
     * call and once the promise is resolved , the promise handler again comes to the call stack.
 3. How async await works behind the scenes ? :
     * Need to understand what happens behind the scenes when we use async keyword before the function 

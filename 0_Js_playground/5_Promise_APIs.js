@@ -20,13 +20,17 @@ Promise APIs
         1.0 : Promise.race([P1,P2,P3])
         1.1 : The first promise which gets resolved, so it will give the value of P2 , if P2 gets resolved first in respect to P1 and P3 
         1.2 : What If P2 gets rejected first , then in that case error will be thrown.
-        1.3 : basically whatever happens fast, it will return the reject / resolved value of that fastest promise.
+        1.3 : basically whatever happens first, it will return the reject / resolved value of that fastest promise.
 
 4. Promise.any()
         1.0 : Promise.any ([P1,P2,P3])
         1.1 : Here we will wait for first successful fulfilled / resolved promise.
         1.2 : In case all the promises got failed, then the returned result will be aggregated error and this will be array [error1 , error2 , error3]
         1.3 : If first gets failed, it will wait for next success promise and so on..
+
+Settled --> Got the Result : ( IT means both ways )
+1.1 : Settled means it can be success / resolved / fulfilled
+1.2 : Settled means it can be failure / rejected / rejected
 
 */
 
